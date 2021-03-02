@@ -1,0 +1,40 @@
+.layout__header {
+	background-color: #fff;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	height: 104px;
+	align-items: flex-end;
+	padding-bottom: 20px;
+	&__logo {
+	}
+	&__nav {
+		display: flex;
+		margin-right: -10px;
+		&-elem {
+			width: 120px;
+			text-align: center;
+			font-family: 'Signika Negative', sans-serif;
+			color: #003764;
+			border-top: 10px solid transparent;
+			transition: .15s ease-out;
+			&:hover {
+				border-top-color: #0e57a1;
+				color: #0e57a1;
+			}
+			&.active {
+				border-top-color: #0e57a1;
+				color: #0e57a1;
+			}
+			a { padding-top: 56px; 
+			}
+		}
+	}
+}
+.logo {
+	display: block;
+	background-image: url(static/logo.png);
+	width: 160px;
+	height: 19px;
+}
