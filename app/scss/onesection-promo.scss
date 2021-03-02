@@ -97,6 +97,24 @@
 			height: 88px;
 			width: 133px;
 			border: 3px solid #002c58;
+			background-image: url(https://img.youtube.com/vi/efMUd32-sKs/mqdefault.jpg);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			.play__btn {
+				height: 30px;
+				width: 40px;
+				background-color: #194168;
+				&:before {
+					content: '';
+					position: absolute;
+					left: 47%;
+					top:38%;
+					border: 10px solid transparent;
+					border-left: 10px solid #fff;
+				}
+			}
 		}
 		.showcase-img {
 			background-image: url(static/showcase.png);

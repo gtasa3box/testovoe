@@ -1,0 +1,64 @@
+.content {
+	display: flex;
+	justify-content: space-between;
+	.showcase {
+		width: 40%;
+		&__case {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			margin-top: 35px;
+			&-img {
+				width: 180px;
+				height: 130px;
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.number_squere {
+					height: 35px;
+					width: 35px;
+					background-color: #001e3c;
+					color: #fff;
+					font-family: 'Open Sans', sans-serif;
+					font-size: 11px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+				.logo__app {
+					background-image: url(static/summerapp.png);
+					height: 15px;
+					width: 110px;
+					background-size: contain;
+					&-small {
+						height:12px;
+						width: 70px;
+						position: absolute;
+						right: 7px;
+						bottom: 15px;
+					}
+				}
+			}
+			.summer1 {
+				background-image: url(static/summer1.jpg);
+				margin-bottom: 15px;
+			}
+			.summer2 {
+				background-image: url(static/summer2.jpg);
+			}
+			.summer3 {
+				background-image: url(static/summer3.jpg);
+			}
+			.summer4 {
+				background-image: url(static/summer4.jpg);
+			}
+		}
+	}
+	.news {
+		width: 59%;
+	}
+}
