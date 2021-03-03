@@ -30,6 +30,10 @@
 				height: 220px;
 				padding-top: 10px;
 			}
+			@media (max-width: 375px) {
+				height: 120px;
+				margin: 0 20px;
+			}
 			span {
 				display: inline;
 				color: #001e3c;
@@ -49,6 +53,11 @@
 				}
 				@media (max-width: 630px) {
 					display: none;
+				}
+				@media (max-width: 375px) {
+					display: block;
+					top: 0;
+					left:0;
 				}
 			}
 		}

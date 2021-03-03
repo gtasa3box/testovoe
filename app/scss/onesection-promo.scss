@@ -114,6 +114,9 @@
 		@media (max-width: 650px) {
 			justify-content: flex-start;
 		}
+		@media (max-width: 420px) {
+			padding-right: 0;
+		}
 		a>.show_img {
 			height: 88px;
 			width: 133px;
@@ -143,6 +146,9 @@
 			height: 15px;
 			@media (max-width: 650px){
 				margin-left: 10px;
+			}
+			@media (max-width: 330px) {
+				margin-left: 5px;
 			}
 		}
 	}

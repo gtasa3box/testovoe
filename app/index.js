@@ -30,6 +30,14 @@ $('.carusel').slick({
 		{
 		breakpoint: 480,
 		settings: {
+			slidesToShow: 2,
+			arrows: false,
+			slidesToScroll: 1
+		}
+		},
+		{
+		breakpoint: 375,
+		settings: {
 			slidesToShow: 1,
 			arrows: false,
 			slidesToScroll: 1

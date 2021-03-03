@@ -44,6 +44,9 @@
 		width: 30%;
 		margin-top: 20px;
 	}
+	@media (max-width: 330px){
+		width: 40%;
+	}
 	&__body{
 		font-family: 'Open Sans', sans-serif;
 		color: #0e57a1;

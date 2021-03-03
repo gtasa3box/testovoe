@@ -48,12 +48,12 @@
 			transition: .15s ease-out;
 			@media (max-width: 768px) {
 				width: 90px;
-				background-color: #0e57a1;
-				color: #fff;
 			}
 			@media (max-width: 630px) {
 				border-top:none;
 				width: 100%;
+				background-color: #0e57a1;
+				color: #fff;
 			}
 			&:hover {
 				border-top-color: #0e57a1;
