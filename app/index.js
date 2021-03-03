@@ -23,6 +23,7 @@ $('.carusel').slick({
 		breakpoint: 600,
 		settings: {
 			slidesToShow: 2,
+			arrows: false,
 			slidesToScroll: 2
 		}
 		},
@@ -30,11 +31,14 @@ $('.carusel').slick({
 		breakpoint: 480,
 		settings: {
 			slidesToShow: 1,
+			arrows: false,
 			slidesToScroll: 1
 		}
 		}
 	]
 	});
 
-
+$('.js-nav-icon').click(function(){
+	$('.js-nav-icon, .js-dropdown-nav').toggleClass('active2');
+})
 console.log('Boilerplate is working!');

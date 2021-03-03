@@ -29,6 +29,10 @@
 	height: 93.5%;
 	background-repeat: no-repeat;
 	pointer-events: none;
+	@media (max-width: 650px) {
+		display: none;
+	}
+
 }
 .promo {
 	width: 40%;
@@ -40,6 +44,12 @@
 		padding-left: 10px;
 		width: 47%;
 		padding-bottom: 41px;
+	}
+	@media (max-width: 650px) {
+		width: 80%;
+		align-items: center;
+		margin:0 auto;
+		text-align: center;
 	}
 	&__soc {
 		position: relative;
@@ -101,6 +111,9 @@
 		justify-content: space-between;
 		align-items: center;
 		padding-right: 70px;
+		@media (max-width: 650px) {
+			justify-content: flex-start;
+		}
 		a>.show_img {
 			height: 88px;
 			width: 133px;
@@ -128,6 +141,9 @@
 			background-image: url(static/showcase.png);
 			width: 154px;
 			height: 15px;
+			@media (max-width: 650px){
+				margin-left: 10px;
+			}
 		}
 	}
 	&__buy {

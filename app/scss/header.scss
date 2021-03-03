@@ -7,16 +7,37 @@
 	height: 104px;
 	align-items: flex-end;
 	padding-bottom: 20px;
-	&__logo {
-		@media (max-width: 965px){
+	@media (max-width: 769px) {
+		justify-content: space-around;
+	}
+	@media (max-width: 630px) {
+		justify-content: space-between;
+		height: 65px;
 		padding-left: 10px;
 	}
+	.nav__icon {
+		@media (min-width: 630px){
+			display: none;
+		}
+	}
+	&__logo {
 	}
 	&__nav {
 		display: flex;
 		margin-right: -10px;
 		@media (max-width: 965px) {
 			margin-right: 0;
+		}
+		@media (max-width: 630px) {
+			position: absolute;
+			left: 0;
+			z-index: 2;
+			width: 100%;
+			flex-direction: column;
+			top:65px;
+			visibility: hidden;
+			opacity: 0;
+			pointer-events: none;
 		}
 		&-elem {
 			width: 120px;
@@ -27,16 +48,34 @@
 			transition: .15s ease-out;
 			@media (max-width: 768px) {
 				width: 90px;
+				background-color: #0e57a1;
+				color: #fff;
+			}
+			@media (max-width: 630px) {
+				border-top:none;
+				width: 100%;
 			}
 			&:hover {
 				border-top-color: #0e57a1;
 				color: #0e57a1;
+				@media (max-width: 630px) {
+					color: #fff;
+					background-color: #093059;
+				}
 			}
 			&.active {
 				border-top-color: #0e57a1;
 				color: #0e57a1;
+				@media (max-width: 630px) {
+					color: #fff;
+					background-color: #093059;
+				}
 			}
-			a { padding-top: 56px; 
+			a { 
+				padding-top: 56px; 
+				@media (max-width: 630px) {
+					padding: 5px;
+				}
 			}
 		}
 	}
@@ -46,4 +85,9 @@
 	background-image: url(static/logo.png);
 	width: 160px;
 	height: 19px;
+}
+.active2 {
+	visibility: visible;
+	opacity: 1;
+	pointer-events: auto;
 }
