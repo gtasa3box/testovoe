@@ -11,10 +11,11 @@ $('.carusel').slick({
 	nextArrow:"<img class='a-right control-c next slick-next' src='static/arrow-next.png'>",
 	responsive: [
 		{
-		breakpoint: 1024,
+		breakpoint: 1051,
 		settings: {
-			slidesToShow: 3,
-			slidesToScroll: 3,
+			slidesToShow: 4,
+			slidesToScroll: 2,
+			arrows: false,
 			infinite: true
 		}
 		},

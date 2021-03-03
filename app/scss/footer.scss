@@ -1,0 +1,44 @@
+.footer {
+	padding-top: 50px;
+	padding-bottom: 30px;
+	&__title {
+		margin-bottom: 40px;
+	}
+	&__content {
+		display: flex;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 11px;
+		font-weight: 600;
+		color: #0e57a1;
+		:first-child {
+			color: #001e3c;
+		}
+		&-soc {
+			display: flex;
+			width: 150px;
+			justify-content: space-evenly;
+			align-items: center;
+			padding: 0 10px;
+			.soc1{
+				background-image: url(static/soc1_blue.png);
+			}
+			.soc2{
+				background-image: url(static/soc2_blue.png);
+			}
+			.soc3{
+				background-image: url(static/soc3_blue.png);
+			}
+			.soc4{
+				background-image: url(static/soc4_blue.png);
+			}
+			.soc5{
+				background-image: url(static/soc5_blue.png);
+			}
+			.img{
+				width: 15px;
+				height: 15px;
+				background-size: contain;
+			}
+		}
+	}
+}
