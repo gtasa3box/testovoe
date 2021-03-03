@@ -3,6 +3,7 @@
 	margin-top: 35px;
 	.wrapper {
 		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 }
 .carusel {
@@ -36,9 +37,47 @@
 		}
 		&-icon {
 			margin-top: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #0e57a1;
+			.icon {
+				height: 60px;
+				width: 60px;
+				border: 3px solid #0e57a1;
+				margin-right: 20px;
+				&__adam{
+					background-image: url(static/adam.png);
+				}
+				&__alex {
+					background-image: url(static/alex.png);
+					margin-left: -50px;
+					
+				}
+				&__donnie {
+					background-image: url(static/donnie.png);
+					margin-left: -30px;
+				}
+				&__jakub {
+					background-image: url(static/jakub.png);
+					margin-left: -15px;
+				}
+
+			}
 		}
 	}
 	&:last-child {
 		margin-right: 0;
 	}
+}
+.slick-prev,.slick-next {
+	width: 25px;
+	height: 35px;
+	top: 28%;
+}
+.slick-next {
+	right: -40px;
+}
+.slick-prev {
+	left: -40px;
 }

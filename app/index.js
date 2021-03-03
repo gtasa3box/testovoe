@@ -6,6 +6,9 @@ $('.carusel').slick({
 	speed: 300,
 	slidesToShow: 4,
 	slidesToScroll: 1,
+	arrows: true,
+	prevArrow:"<img class='a-left control-c prev slick-prev' src='static/arrow-prev.png'>",
+	nextArrow:"<img class='a-right control-c next slick-next' src='static/arrow-next.png'>",
 	responsive: [
 		{
 		breakpoint: 1024,
