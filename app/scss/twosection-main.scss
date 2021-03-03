@@ -32,9 +32,18 @@
 	@media (max-width: 769px){
 		padding: 0 10px;
 			}
+	@media (max-width: 630px) {
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		align-items: stretch;
+	}
 }
 .card {
 	width: 19%;
+	@media (max-width: 630px){
+		width: 30%;
+		margin-top: 20px;
+	}
 	&__body{
 		font-family: 'Open Sans', sans-serif;
 		color: #0e57a1;
