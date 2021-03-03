@@ -36,11 +36,19 @@
 	flex-direction: column;
 	color: #fff;
 	padding-bottom: 45px;
+	@media (max-width: 965px){
+		padding-left: 10px;
+		width: 47%;
+		padding-bottom: 41px;
+	}
 	&__soc {
 		position: relative;
 		z-index: 1;
 		display: flex;
 		justify-content: flex-start;
+		@media (max-width: 965px){
+		margin-left: -10px;
+		}
 		&-img {
 			height: 45px;
 			width: 50px;

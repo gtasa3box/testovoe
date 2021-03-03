@@ -29,6 +29,9 @@
 	margin: 35px 0;
 	display: flex;
 	justify-content: space-between;
+	@media (max-width: 769px){
+		padding: 0 10px;
+			}
 }
 .card {
 	width: 19%;

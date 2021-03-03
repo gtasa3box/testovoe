@@ -8,10 +8,16 @@
 	align-items: flex-end;
 	padding-bottom: 20px;
 	&__logo {
+		@media (max-width: 965px){
+		padding-left: 10px;
+	}
 	}
 	&__nav {
 		display: flex;
 		margin-right: -10px;
+		@media (max-width: 965px) {
+			margin-right: 0;
+		}
 		&-elem {
 			width: 120px;
 			text-align: center;
@@ -19,6 +25,9 @@
 			color: #003764;
 			border-top: 10px solid transparent;
 			transition: .15s ease-out;
+			@media (max-width: 768px) {
+				width: 90px;
+			}
 			&:hover {
 				border-top-color: #0e57a1;
 				color: #0e57a1;
