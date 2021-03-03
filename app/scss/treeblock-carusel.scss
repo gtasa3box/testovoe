@@ -1,0 +1,44 @@
+.layout__carusel {
+	background-color: #f1f1f1;
+	margin-top: 35px;
+	.wrapper {
+		padding-top: 20px;
+	}
+}
+.carusel {
+	&__item {
+		margin-right: 4px;
+		outline: none;
+		&-textblock{
+			background-color: #fff;
+			height: 140px;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 11px;
+			line-height: 18px;
+			padding: 20px;
+			color: #484848;
+			position: relative;
+			z-index: 1;
+			span {
+				display: inline;
+				color: #001e3c;
+				font-weight: 600;
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				border: 70px solid transparent; 
+				border-right: 44px solid #fff;
+				top: 45px;
+				left: -60px;
+				z-index: -1;
+			}
+		}
+		&-icon {
+			margin-top: 50px;
+		}
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+}
