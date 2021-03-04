@@ -69,7 +69,7 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: "app/static", to: "" },
+        { from: "app/static", to: "static" },
       ],
     }),
     new CleanWebpackPlugin(),
